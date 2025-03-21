@@ -197,6 +197,17 @@
             background: #004d40;
         }
 
+        #donate {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo {
+            max-width: 300px;
+
+        }
+
+
         footer {
             background: #004d40;
             color: white;
@@ -234,10 +245,19 @@
                 <li>Plastic pollution is a global crisis. Every year, millions of tons of plastic enter our oceans,
                     harming marine life and ecosystems. Microplastics—tiny plastic particles—are especially dangerous as
                     they enter the food chain, affecting both marine species and human health.</li>
-                <li>Only 1% of plastic can be found floating in the water. 94% has already sunk to the seafloor. Small
+                <li>Only 1% of plastic can be found floating in the water; 94% has already sunk to the seafloor. Small
                     plastic items and microplastics are virtually impossible to reach, especially when they are deep in
                     the ocean.</li>
-                <li>Hey</li>
+                <li>One in three fish caught for human consumption now contains plastic. Ninety percent of plastic is
+                    made from fossil fuels. Producing one ton of plastic generates 2.5 tonnes of carbon dioxide. Our
+                    actions have consequences, and they are damaging both to us and the environment.</li>
+                <li>Every year, 100,000 marine mammals and turtles, as well as 1 million seabirds, are killed by the
+                    plastic we throw into the ocean.</li>
+                <li>Plastic is a strong, flexible, and durable material. The same qualities that make plastic useful for
+                    making life easier also make it virtually indestructible. As a result, plastic can last for over 450
+                    years, and we can still see it in its various forms. However, plastic never completely disappears—it
+                    only breaks down into smaller and smaller pieces. Therefore, every single piece of plastic we
+                    produce still exists in the form of microplastics.</li>
             </ul>
         </section>
 
@@ -267,10 +287,14 @@
 
 
         <section id="donate">
-            <h2>Support Our Cause</h2>
-            <p>Every donation helps us fight plastic pollution.</p>
-            <button class="donate-btn" onclick="donate()">Donate Now</button>
-            <p id="donation-message"></p>
+            <div class="container">
+                <h2>Support Our Cause</h2>
+                <p>Every donation helps us fight plastic pollution.</p>
+                <button class="donate-btn" onclick="donate()">Donate Now</button>
+                <p id="donation-message"></p>
+            </div>
+
+            <img class="logo" src="wavegoodbye.jpg" alt="">
         </section>
     </div>
 
