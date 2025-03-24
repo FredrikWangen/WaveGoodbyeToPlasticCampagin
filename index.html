@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         body {
             font-family: "Roboto", sans-serif;
@@ -102,7 +107,7 @@
             position: relative;
             color: white;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-            background: url('underwater.jpg') center/cover no-repeat;
+            background: url('beach.png') center/cover no-repeat;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -138,6 +143,12 @@
             padding: 15px;
             border-radius: 5px;
             font-weight: bold;
+        }
+
+        .avoid {
+            font-weight: bold;
+            transition: 0.3s;
+            color: white;
         }
 
         #research {
@@ -202,10 +213,32 @@
             flex-direction: row;
         }
 
+
+
         .logo {
             max-width: 300px;
 
         }
+
+        #more-info a {
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        #more-info a:hover {
+            text-decoration: underline;
+        }
+
+        #about-us {
+            background-color: #5cc2c7;
+            color: white;
+        }
+
+        #about-us>h2 {
+            color: antiquewhite;
+        }
+
 
 
         footer {
@@ -226,9 +259,11 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#facts">Facts & Research</a></li>
+            <li><a href="#facts">Facts</a></li>
+            <li><a href="#facts">Our Goals</a></li>
             <li><a href="#action">Take Action</a></li>
             <li><a href="#donate">Donate</a></li>
+            <li><a href="#about-us">About us</a></li>
         </ul>
     </nav>
 
@@ -264,13 +299,15 @@
         <section id="research">
             <h2>Our Goals</h2>
             <ul>
-                <li>Rase awareness about plastic consumption and micro plastics</li>
+                <li>Raise awareness about plastic consumption and microplastics</li>
                 <li>Inform people of the harm of microplastics</li>
-                <li>Advocate for people to consume less plastic and choose climate friendly alternatives</li>
+                <li>Advocate for people to consume less plastic and choose climate-friendly alternatives</li>
             </ul>
-            <p>We want stop plastic coming to the ocean for the our, wildlife, enviorment and the world sake.
-            </p>
+            <p>We want to stop plastic from entering the ocean for the sake of our wildlife, environment, and the world.
+                All the
+                money we collect goes towards cleaning up beaches and the ocean.</p>
         </section>
+
 
 
         <section id="action">
@@ -280,7 +317,7 @@
                 <li>Use plastic-free skincare & cosmetics.</li>
                 <li>Wash clothes in microplastic-filtering laundry bags.</li>
                 <li>Use reusable, non-plastic packaging.</li>
-                <li>Support brands that avoid microplastics.</li>
+                <li><a href="#brands" class="avoid">Avoid non-sustainable brands</a></li>
                 <li>Advocate for stronger regulations.</li>
             </ul>
         </section>
@@ -296,15 +333,54 @@
 
             <img class="logo" src="wavegoodbye.jpg" alt="">
         </section>
+
+        <section id="about-us">
+            <h2>About us</h2>
+            <p>WaveGoodbyeToPlastic is a non-profit organization raising awareness about the problem of plastic
+                pollution in the ocean. Our goal is to inform people about the consequences of using plastic and give
+                advice on how to live a more sustainable life. With the money that we raise from our donations on our
+                website, we will organize meet ups where people can volunteer to help clean beaches across the UK. On
+                our website we have some tips and tricks on how to reduce plastic consumption in your daily life and
+                choose more climate friendly options.</p>
+        </section>
+
+        <section id="more-info">
+            <h2>More Info</h2>
+            <p>Learn more about plastic pollution and how you can make a difference.</p>
+            <ul>
+                <li>Read more in our pamphlet, exclusively only given out in our in person event</li>
+                <li>Follow our sosial media accounts: <a
+                        href="https://www.instagram.com/_wavegoodbyetoplastic_?igsh=MW42anIxNmliamZ0cg=="> <i
+                            class="fa-brands fa-instagram"></i>#WaveGoodbyeToPlastic </a> </li>
+                <li><a href="https://www.sas.org.uk/plastic-pollution/plastic-pollution-facts-figures/"
+                        target="_blank">Plastic Pollution Facts</a></li>
+                <li><a href="https://www.wwf.org.uk/updates/how-does-plastic-end-ocean" target="_blank">How Plastic
+                        Enters
+                        the Ocean</a></li>
+                <li><a href="https://noc.ac.uk/under-the-surface/ocean-plastics" target="_blank">NOC Ocean Plastics</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="brands">
+            <h2>Brands you should avoid</h2>
+            <div class="row1">
+                <img src="shein.png" alt="shein logo">
+                <img src="Temu.png" alt="Temu logo">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="row2">
+                <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+            </div>
+
+        </section>
+
     </div>
 
-    <ul>
-        <li><a href="https://www.sas.org.uk/plastic-pollution/plastic-pollution-facts-figures/" target="_blank">Plastic
-                Pollution Facts</a></li>
-        <li><a href="https://www.wwf.org.uk/updates/how-does-plastic-end-ocean" target="_blank">How Plastic Enters the
-                Ocean</a></li>
-        <li><a href="https://noc.ac.uk/under-the-surface/ocean-plastics" target="_blank">NOC Ocean Plastics</a></li>
-    </ul>
+
+
 
     <footer>
         <p>&copy; 2025 #WaveGoodbyeToPlastic | <a href="#">Privacy Policy</a></p>
