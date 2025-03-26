@@ -187,12 +187,53 @@
             color: white;
         }
 
-        #research * {
+        #plastic {
+            position: relative;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+            background: url('turtle.png') center/cover no-repeat;
+        }
+        #plastic::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            border-radius: 10px;
+        }
+        #plastic * {
             position: relative;
             z-index: 1;
             color: white;
         }
 
+        #research * {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .video-container {
+            text-align: center;
+            padding: 40px;
+            background:#5cc2c7;
+            border-radius: 10px;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
         .donate-btn {
             background: #00796b;
             color: white;
@@ -281,7 +322,7 @@
     <div class="container">
         <section class="hero" id="home">
             <h2>Join the Movement Against Plastic Pollution</h2>
-            <p>Plastic waste is destroying our oceans. It's time to act.</p>
+            <p>Lets turn the tide on plastic pollution!!!</p>
         </section>
 
         <section id="facts">
@@ -305,6 +346,23 @@
                     only breaks down into smaller and smaller pieces. Therefore, every single piece of plastic we
                     produce still exists in the form of microplastics.</li>
             </ul>
+        </section>
+
+        <section id="plastic">
+            <h2>How plastic get in our food</h2>
+            <p>Did you know that plastic not only floats but also sinks to the bottom of the ocean? It then gets mixed
+                in underwater avalanches with sediment. This means that plastic can end up buried in seafloor sediments
+                along with marine life.</p>
+            <p>Here´s how it happens:</p>
+            <ul>
+                <li>Plastics float on the surface</li>
+                <li>Flow down underwater canyons</li>
+                <li>Mix with sediment and get buried</li>
+            </ul>
+            <p>Not only are our marine life and seafloor ruined by plastic, but so is our food chain. Microplastics in
+                the ocean accumulate high levels of toxins on their surface. This means that small creatures consume
+                toxin-covered plastics, which then enter our food chain. Sooner or later, they will be eaten by larger
+                creatures, and then by even larger ones. At the end of the food chain is us—humans.</p>
         </section>
 
         <section id="research">
@@ -331,6 +389,11 @@
                 <li><a href="#brands" class="avoid">Avoid non-sustainable brands</a></li>
                 <li>Advocate for stronger regulations.</li>
             </ul>
+        </section>
+
+        <section class="video-container">
+            <h2>See the Impact of Plastic Pollution</h2>
+            <video autoplay controls src="video.mp4" type="video/mp4"></video>
         </section>
 
 
@@ -385,6 +448,24 @@
             <div class="row1">
                 <img src="mcdonalds.png" alt=""> <img src="starbucks.png" alt=""><img src="Coca-Cola.png" alt=""><img
                     src="H&M.png" alt="">
+            </div>
+
+        </section>
+
+        <section id="brands">
+            <h2>Brands that we support</h2>
+            <div class="row1">
+                <img src="blue.png" alt=" logo">
+                <img src="sodastream.png" alt="Temu logo">
+                <img src="Patagonia.png" alt="">
+                <img src="lush.png" alt="">
+                <img src="ikea.png" alt="">
+            </div>
+            <div class="row1">
+                <img src="hero.png" alt="">
+                <img src="Everlane.png" alt="">
+                <img src="chipotle.png" alt="">
+                <img src="bodyshop.png" alt="">
             </div>
 
         </section>
